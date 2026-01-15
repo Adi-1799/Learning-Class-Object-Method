@@ -9,7 +9,8 @@ while True:
     print("\n1. Add expense")
     print("2. Show expenses")
     print("3. Show total")
-    print("4. Exit")
+    print("4. Show app stats")
+    print("5. Exit")
 
     choice = input("Choose: ")
 
@@ -24,6 +25,9 @@ while True:
         user.total()
 
     elif choice == "4":
+        ExpenseTracker.show_app_stats()   # class method
+
+    elif choice == "5":
         break
 
     else:
